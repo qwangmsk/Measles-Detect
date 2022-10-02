@@ -6,7 +6,7 @@ Measles is a highly contagious disease, one of the largest vaccine-preventable i
 
 In this work, we employed transfer learning to build deep convolutional neural networks (CNNs) to distinguish measles rash from other skin conditions. Experiments with ResNet-50 model, trained on our diverse and curated skin rash image dataset, produce classification accuracy of 95.2%, sensitivity of 81.7%, and specificity of 97.1%, respectively. The performance of a small CNN model MobileNet-V2 on our image data set is also provided.
 
-The code was run and tested on Google Colab. 
+MobileNet-V2 was run and tested on Google Colab. 
 
 Citation
 ----------
