@@ -11,3 +11,5 @@ MobileNet-V2 was run and tested on Google Colab. Our complete image data set is 
 Citation
 ----------
 K. Glock, C. Napier, T. Gary, V. Gupta, J. Gigante, W. Schaffner, Q. Wang (2021) Measles Rash Identification Using Transfer Learning and Deep Convolutional Neural Networks. IEEE International Conference on Big Data, pp. 3905-3910 (https://ieeexplore.ieee.org/document/9671333).
+
+K. Glock, C. Napier, A. Louie, T. Gary, J. Gigante, W. Schaffner, Q. Wang* (2020) Measles Rash Identification Using Residual Deep Convolutional Neural Network. arXiv:2005.09112 (https://arxiv.org/abs/2005.09112).
