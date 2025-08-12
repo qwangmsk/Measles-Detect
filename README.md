@@ -12,6 +12,6 @@ In the second stage of the project, we enhaneced the sample size and diversity b
 
 Citation
 ----------
-Q. Wang (2025) Accurate Measles Rash Detection via Vision Transformer Fine-Tuning. arXiv:2005.09112 (https://arxiv.org/abs/2005.09112).
+1. Q. Wang (2025) Accurate Measles Rash Detection via Vision Transformer Fine-Tuning. arXiv:2005.09112 (https://arxiv.org/abs/2005.09112).
 
-K. Glock, C. Napier, T. Gary, V. Gupta, J. Gigante, W. Schaffner, Q. Wang (2021) Measles Rash Identification Using Transfer Learning and Deep Convolutional Neural Networks. IEEE International Conference on Big Data, pp. 3905-3910 (https://ieeexplore.ieee.org/document/9671333).
+2. K. Glock, C. Napier, T. Gary, V. Gupta, J. Gigante, W. Schaffner, Q. Wang (2021) Measles Rash Identification Using Transfer Learning and Deep Convolutional Neural Networks. IEEE International Conference on Big Data, pp. 3905-3910 (https://ieeexplore.ieee.org/document/9671333).
