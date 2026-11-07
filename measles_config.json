@@ -1,0 +1,32 @@
+{
+  "dataset_dir": "./rash_dataset",
+  "output_dir": "./measles_results",
+  "mode": "binary",
+  "limit_per_class": 0,
+  "sampling": "first",
+  "seed": 42,
+  "max_edge": 768,
+  "jpeg_quality": 85,
+  "retries": 2,
+  "sleep_seconds": 0.2,
+  "timeout_seconds": 180,
+  "models": {
+    "openai": "gpt-6.1-terra",
+    "gemini": "gemini-3.8-flash"
+  },
+  "workers": 4,
+  "openai": {
+    "detail": "low",
+    "max_tokens": 2048,
+    "reasoning_effort": "low"
+  },
+  "gemini": {
+    "temperature": 0,
+    "thinking_budget": 0,
+    "max_output_tokens": 800
+  },
+  "prompts": {
+    "binary": "You are evaluating a research benchmark of clinical skin photographs. Examine ONLY the image, without using filenames or hidden labels. Decide whether the visible findings are more consistent with measles (rubeola, caused by measles virus) or a non-measles condition. A morbilliform rash is not specific to measles. Do not infer exposure history, symptoms, or vaccination status from the image. Return ONLY a JSON object with exactly these fields: {\"label\":\"measles\" or \"non_measles\",\"confidence\":number between 0 and 1}. Confidence is a subjective assessment, NOT a calibrated probability. If uncertain, choose the more likely label.",
+    "top3": "You are evaluating a research benchmark of clinical skin photographs. Examine ONLY the image, without using filenames or hidden labels. Provide exactly THREE distinct, ranked, specific clinical diagnoses for the visible rash. Each entry must name ONE disease, not a combined differential or an uncertain phrase such as 'rule out X' or 'X versus Y'. Measles (rubeola) is distinct from rubella (German measles). Include measles only if it is genuinely among the three most likely diagnoses. Do not assume measles from a morbilliform rash alone. Do not infer symptoms, exposures, or vaccination status from the image. Return ONLY a JSON object with exactly this structure: {\"top3\":[\"diagnosis 1\",\"diagnosis 2\",\"diagnosis 3\"]}."
+  }
+}
